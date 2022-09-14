@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba api</title>
+<script type= "text/javascript">
+
+    async function Pruebapais() {
+        const respuesta = await fetch("https://api.nationalize.io/?name=andres");
+        const nombre = respuesta.json();
+
+        return nombre;
+    }
+
+  function mostrarNombre(n)
+  {
+     document.getElementById("Mensaje").innerHTML = n.country[0].country_id;
+     document.getElementById("Mensaje2").innerHTML = n.country[1].country_id;
+
+  }
+
+  Pruebapais().then(mostrarNombre);
+
+
+</script>
+</head>
+
+
+
+<body>
+
+<p id="Mensaje">Texto.... </p>
+<p id="Mensaje2">Texto...</p>
+<script type= "text/javascript">
+mostrarNombre('Antonio');
+</script>
+    
+</body>
+</html>

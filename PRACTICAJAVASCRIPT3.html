@@ -1,0 +1,46 @@
+<html>
+<body>
+
+<h2>JavaScript Scope</h2>
+
+<p id="demostracion1"></p>
+
+<p id="demostracion2"></p>
+
+<p id="demostracion"></p>
+<script>
+
+// SCOPE
+
+// SCOPE 
+
+let carName = "Volvo";
+function myFunction() {
+  
+  document.getElementById("demostracion1").innerHTML = typeof carName + " " + carName;
+}
+
+document.getElementById("demostracion2").innerHTML = typeof carName;
+
+myFunction();
+
+// THIS Y POO 
+
+const person = {
+  primernombre: "Brehider",
+  apellido: "Palacios",
+  id: 1214744309,
+  nombre : function() {
+    return this.primernombre + "," + this.apellido;
+  }
+};
+
+document.getElementById("demostracion").innerHTML = person.nombre();
+
+
+
+</script>
+
+</body>
+</html>
+

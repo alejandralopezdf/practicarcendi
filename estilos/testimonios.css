@@ -1,0 +1,56 @@
+*{
+    padding: 0%;
+}
+
+.hero{
+    background-color: bisque;
+}
+
+.hero  > h2{
+ color: aliceblue;
+ text-align: center;
+ font-size: 40px;
+ padding-top: 80px;
+
+}
+
+.slide-row {
+    display: flex;
+    width: 3200px;
+}
+
+.slide-col{
+    width: 800px;
+    height: 400px;
+    position: relative;
+}
+
+.imagenusuario{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.imagenusuario img{
+    height: 100%;
+    border-radius: 10px;
+}
+.textodeusuario{
+    background-color: gray;
+    width: 520px;
+    height: 270px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    color: white;
+    padding: 45px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.textodeusuario p {
+    font-size: 18px;
+    line-height: 24px ;
+}

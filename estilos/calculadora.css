@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+#estilocalcu{
+    width: 200px;
+    height: 200px;
+    border: 1px solid firebrick;
+    border-radius: 5px;
+    background-color: silver;
+
+}
+
+#estilocalcu form{
+     width: 100%;
+    height: 100%;
+    background-color: rgb(red, rgb(116, 248, 116), rgb(4, 4, 4));
+}
+
+#estilocalcu input[type=textfield]{
+ align-items: center;
+    width: 95%;
+    cursor: default;
+   font-family: 'Roboto', sans-serif; 
+   background-color: black;
+   color: white;
+   padding: 1%;
+   text-align: center;
+   outline: none;
+    
+}
+
+#estilocalcu input[type=button]{
+    align-items: center;
+       width: 25%;
+    cursor: default;
+   font-family: 'Roboto', sans-serif; 
+   background-color: black;
+   color: whitesmoke;
+   }
